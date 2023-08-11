@@ -8,17 +8,17 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  -- lua functions that many plugins use
+  -- Lua functions that many plugins use
   use"nvim-lua/plenary.nvim"
 
-  -- telescope
+  -- Telescope
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
       -- or                            , branch = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- theme
+  -- Theme
   use {
       'rose-pine/neovim',
       as = 'rose-pine',
@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
       end
   }
 
-  -- highlight
+  -- Highlight
   use {
     "nvim-treesitter/nvim-treesitter",
     run = function()
@@ -36,27 +36,28 @@ return require('packer').startup(function(use)
     end,
   }
 
--- harpoon
-use "theprimeagen/harpoon"
+  -- Harpoon
+  use "theprimeagen/harpoon"
 
+  -- Surround
+  use "tpope/vim-surround"
 
-use "tpope/vim-surround"
-
--- status line
+  -- Status line
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
-  --git signs plugins
+  -- Git signs plugins
   use "lewis6991/gitsigns.nvim"
 
-  -- autoTag
+  -- AutoPai
   use {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup()
     end
   }
 
+  -- AutoTag
   use "windwp/nvim-ts-autotag"
 
   -- Highlight tags
