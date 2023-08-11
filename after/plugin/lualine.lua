@@ -4,6 +4,10 @@ if not status then
 end
 
 lualine.setup({
+  options = {
+    icons_enabled = false,
+    theme = "palenight"
+  },
   sections= {
     lualine_c = {{'filename', path = 1}}
   }

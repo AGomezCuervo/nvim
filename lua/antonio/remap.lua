@@ -15,6 +15,7 @@ vim.keymap.set("n", "<leader>sh", "<C-w>s")
 vim.keymap.set("n", "<leader>se", "<C-w>=")
 vim.keymap.set("n", "<leader>sx", "<:close<CR>")
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
+vim.keymap.set("n", "<leader>s;", "<C-w>w")
 
 --Tabs
 vim.keymap.set("n", "<leader>to", ":tabnew<CR>")
