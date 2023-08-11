@@ -1,5 +1,5 @@
 # Nvim-config
+My config of Nvim
 
-remove background in gitsign's column:
-
+To remove background in gitsign's column:
 :lua ColorsMyPencil()
