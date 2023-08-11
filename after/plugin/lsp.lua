@@ -7,7 +7,8 @@ lsp.ensure_installed({
   'pylsp',
   'cssls',
   'html',
-  'lua_ls'
+  'lua_ls',
+  'custom_elements_ls'
 })
 
 -- Fix Undefined global 'vim'
