@@ -1,13 +1,14 @@
 local opt = vim.opt
 
---numbers
+--editor
 opt.relativenumber = true
 opt.number = true
+opt.showmode = false
 
 --tab & indentation
-opt.tabstop = 2 
-opt.softtabstop = 2 
-opt.shiftwidth = 2 
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 opt.smartindent = true
 opt.autoindent = true
