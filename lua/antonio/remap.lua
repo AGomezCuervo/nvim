@@ -9,7 +9,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "x", '"_x')
 vim.keymap.set('i', '<C-BS>', '<C-W>')
 
---split window
+-- split window
 vim.keymap.set("n", "<leader>sv", "<C-w>v")
 vim.keymap.set("n", "<leader>sh", "<C-w>s")
 vim.keymap.set("n", "<leader>se", "<C-w>=")
@@ -17,8 +17,13 @@ vim.keymap.set("n", "<leader>sx", "<:close<CR>")
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
 vim.keymap.set("n", "<leader>s;", "<C-w>w")
 
---Tabs
-vim.keymap.set("n", "<leader>to", ":tabnew<CR>")
-vim.keymap.set("n", "<leader>tx", ":tabclose<CR>")
-vim.keymap.set("n", "<leader>tn", ":tabn<CR>")
-vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
+--  Tabs
+--vim.keymap.set("n", "<leader>to", ":tabnew<CR>")
+--vim.keymap.set("n", "<leader>tx", ":tabclose<CR>")
+--vim.keymap.set("n", "<leader>tn", ":tabn<CR>")
+--vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
+
+-- Trouble
+vim.keymap.set('n', '<leader>to', ':TroubleToggle<CR>', {})
+vim.keymap.set('n', '<leader>tl', ':Trouble loclist<CR>', {})
+vim.keymap.set('n', '<leader>tq', ':Trouble quickfix<CR>', {})
