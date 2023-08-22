@@ -80,7 +80,7 @@ return require('packer').startup(function(use)
   })
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
-  -- Color Preview
+  -- Hexokinase
   use {'RRethy/vim-hexokinase', build = "make hexokinase"}
 
   -- LSP
