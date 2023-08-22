@@ -22,8 +22,3 @@ vim.keymap.set("n", "<leader>s;", "<C-w>w")
 --vim.keymap.set("n", "<leader>tx", ":tabclose<CR>")
 --vim.keymap.set("n", "<leader>tn", ":tabn<CR>")
 --vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
-
--- Trouble
-vim.keymap.set('n', '<leader>to', ':TroubleToggle<CR>', {})
-vim.keymap.set('n', '<leader>tl', ':Trouble loclist<CR>', {})
-vim.keymap.set('n', '<leader>tq', ':Trouble quickfix<CR>', {})
