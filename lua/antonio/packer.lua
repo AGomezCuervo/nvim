@@ -16,7 +16,7 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
-}
+  }
 
   -- Theme
   use {
@@ -37,7 +37,7 @@ return require('packer').startup(function(use)
     local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
     ts_update()
   end,
-}
+  }
 
   -- Harpoon
   use "theprimeagen/harpoon"
@@ -72,6 +72,16 @@ return require('packer').startup(function(use)
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
   }
+
+  -- Markdown Preview
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
+  -- Color Preview
+  use {'RRethy/vim-hexokinase', build = "make hexokinase"}
 
   -- LSP
   use {
