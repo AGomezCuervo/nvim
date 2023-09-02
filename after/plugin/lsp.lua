@@ -8,7 +8,8 @@ lsp.ensure_installed({
   'cssls',
   'html',
   'lua_ls',
-  'custom_elements_ls'
+  'custom_elements_ls',
+  'volar'
 })
 
 -- Fix Undefined global 'vim'
