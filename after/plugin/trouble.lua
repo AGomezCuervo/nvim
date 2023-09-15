@@ -1,6 +1,7 @@
 local trouble = require("trouble")
 
 trouble.setup({
+  icons = false,
   signs = {
     -- icons / text used for a diagnostic
     error = "E",

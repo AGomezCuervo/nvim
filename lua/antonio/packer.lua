@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
   }
 
   -- Icons
-  use 'kyazdani42/nvim-web-devicons'
+  -- use 'kyazdani42/nvim-web-devicons'
 
   -- Treesitter
   use {
@@ -70,7 +70,6 @@ return require('packer').startup(function(use)
   -- Trouble
   use {
     "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
   }
 
   -- Markdown Preview
