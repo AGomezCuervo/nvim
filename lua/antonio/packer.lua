@@ -18,6 +18,14 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Comments
+  use {
+    'numToStr/Comment.nvim',
+    config = function ()
+      require('Comment').setup()
+    end
+  }
+
   -- Theme
   use {
     'rose-pine/neovim',
