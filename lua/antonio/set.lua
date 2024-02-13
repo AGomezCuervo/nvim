@@ -4,6 +4,7 @@ local opt = vim.opt
 opt.relativenumber = true
 opt.number = true
 opt.showmode = false
+opt.scrolloff = 5
 
 --tab & indentation
 opt.tabstop = 2
@@ -25,15 +26,12 @@ opt.wrap = true
 opt.backspace = "indent,eol,start"
 
 --clipboard
-opt.clipboard:append("unnamedplus")
+opt.clipboard = "unnamedplus"
 
 --split windows
 opt.splitright = true
 opt.splitbelow = true
 
---auto save
-opt.autowrite = true
-
 --spelling
-opt.spelllang = "en_us"
-opt.spell = true
+--opt.spelllang = "en_us"
+--opt.spell = true
