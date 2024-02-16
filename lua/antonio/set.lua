@@ -5,6 +5,7 @@ opt.relativenumber = true
 opt.number = true
 opt.showmode = false
 opt.scrolloff = 5
+opt.spelllang = "es"
 
 --tab & indentation
 opt.tabstop = 2
@@ -31,7 +32,3 @@ opt.clipboard = "unnamedplus"
 --split windows
 opt.splitright = true
 opt.splitbelow = true
-
---spelling
---opt.spelllang = "en_us"
---opt.spell = true
