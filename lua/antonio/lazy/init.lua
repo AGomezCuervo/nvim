@@ -11,6 +11,5 @@ return {
     "rrethy/vim-hexokinase",
     build = "make hexokinase"
   },
-  "lewis6991/gitsigns.nvim",
   "windwp/nvim-ts-autotag",
 }
