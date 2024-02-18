@@ -27,7 +27,7 @@ opt.wrap = true
 opt.backspace = "indent,eol,start"
 
 --clipboard
-opt.clipboard = "unnamedplus"
+-- opt.clipboard = "unnamedplus"
 
 --split windows
 opt.splitright = true

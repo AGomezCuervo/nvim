@@ -10,7 +10,6 @@ return {
     "hrsh7th/nvim-cmp",
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
-    "j-hui/fidget.nvim",
   },
 
   config = function()
@@ -22,7 +21,6 @@ return {
       vim.lsp.protocol.make_client_capabilities(),
       cmp_lsp.default_capabilities())
 
-    require("fidget").setup({})
     require("mason").setup()
     require("mason-lspconfig").setup({
       -- ensure_installed = {
@@ -31,7 +29,7 @@ return {
       --   "html", "graphql", "htmx", "jsonls", "sqlls"
       -- },
       ensure_installed = {
-        "cssls", "gopls", "htmx", "tsserver"
+        "cssls", "gopls", "htmx", "tsserver", "html"
       },
       handlers = {
         function(server_name)
@@ -80,6 +78,8 @@ return {
         ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
         ['<C-y>'] = cmp.mapping.confirm({select = true}),
         ["<C-Space>"] = cmp.mapping.complete(),
+        ["<C-u>"] = cmp.mapping.scroll_docs(-4),
+        ["<C-d>"] = cmp.mapping.scroll_docs(4),
       }),
       sources = cmp.config.sources({
         { name = 'nvim_lsp' },
@@ -92,7 +92,7 @@ return {
     vim.diagnostic.config({
       -- update_in_insert = true,
       float = {
-        focusable = false,
+        focusable = true,
         style = "minimal",
         border = "rounded",
         source = "always",
