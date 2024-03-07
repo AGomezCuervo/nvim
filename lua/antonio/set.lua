@@ -1,5 +1,4 @@
 local opt = vim.opt
-
 --editor
 opt.relativenumber = true
 opt.number = true
@@ -22,6 +21,9 @@ opt.smartcase = true
 
 --line wrapping
 opt.wrap = true
+opt.linebreak = true
+opt.breakindent = true
+
 
 -- backspace
 opt.backspace = "indent,eol,start"
@@ -32,3 +34,5 @@ opt.backspace = "indent,eol,start"
 --split windows
 opt.splitright = true
 opt.splitbelow = true
+
+-- opt.colorcolumn = "80"

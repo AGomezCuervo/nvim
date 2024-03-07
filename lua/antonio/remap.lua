@@ -19,6 +19,15 @@ vim.keymap.set("n", "<leader>s;", "<C-w>w")
 
 vim.keymap.set({"n", "x"}, "<leader>y", '"+y')
 
+-- Autocommand for Tex files
+vim.cmd([[
+    augroup texMappings
+        autocmd!
+        autocmd FileType tex nnoremap j gj
+        autocmd FileType tex nnoremap k gk
+    augroup END
+]])
+
 --  Tabs
 --vim.keymap.set("n", "<leader>to", ":tabnew<CR>")
 --vim.keymap.set("n", "<leader>tx", ":tabclose<CR>")
