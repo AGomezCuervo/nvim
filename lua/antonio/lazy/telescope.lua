@@ -7,7 +7,25 @@ return {
 
     config = function()
         require('telescope').setup({
-          defaults = {
+           defaults = {
+            layout_strategy = "center",
+            sorting_strategy = "ascending",
+            results_title = false,
+            layout_config = {
+              horizontal = {
+                preview_cutoff = 1,
+                height = { padding = 20 },
+                width = { padding = 20},
+              },
+            },
+            border = true,
+            borderchars = {
+              prompt  = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+
+              results = { "─", "│", "─", "│", "├", "┤", "┘", "└" },
+
+              preview = { "─", "│", "─", "│", "┌", "┐", "┘", "└" },
+            },
             mappings = {
               i = {
                 ["<C-j>"] = require('telescope.actions').move_selection_next,

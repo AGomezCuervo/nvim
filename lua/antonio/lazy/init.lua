@@ -1,7 +1,19 @@
 return {
   "nvim-lua/plenary.nvim",
   "tpope/vim-fugitive",
-  "folke/zen-mode.nvim",
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      window = {
+        width = 90,
+      },
+      plugins = {
+        options = {
+          laststatus = 3,
+        }
+      }
+    }
+  },
   {
     "kylechui/nvim-surround",
     version = "*",

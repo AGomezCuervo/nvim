@@ -12,7 +12,7 @@ return {
    ls.add_snippets("html", {
      s("!!", {
        t({'<!DOCTYPE html>'}),
-       t({""}),
+       t({"", "\t"}),
        t('<html lang="en">'),
        t({ "", "\t"}),
        t('<head>'),

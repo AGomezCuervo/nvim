@@ -5,6 +5,9 @@ opt.number = true
 opt.showmode = false
 opt.scrolloff = 5
 opt.spelllang = "es"
+opt.guicursor = ""
+-- opt.cursorline = true
+opt.termguicolors = true
 
 --tab & indentation
 opt.tabstop = 2
