@@ -4,9 +4,8 @@ return {
   config = function()
     require("nvim-treesitter.configs").setup({
       ensure_installed = {
-        "gitignore", "go", "latex", "vue", "vimdoc", "vue",
-        "javascript", "typescript", "python", "bash", "cmake",
-        "c", "cpp","lua", "rust", "css", "html", "json"},
+        "gitignore", "go", "vue", "vimdoc", "json",
+        "javascript", "make",  "typescript", "python", "bash","c", "cpp","lua", "rust", "css", "html"},
         indent = {enable = false},
         autotag = {
           enable = true,
@@ -15,8 +14,7 @@ return {
         auto_install = true,
         highlight = {
           enable = true,
-          disable = {"latex"},
-          additional_vim_regex_highlighting = true,
+          additional_vim_regex_highlighting = false,
         },
         incremental_selection = {
             enable = true,
