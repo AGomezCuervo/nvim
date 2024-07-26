@@ -2,11 +2,12 @@ local opt = vim.opt
 --editor
 opt.relativenumber = true
 opt.number = true
+opt.number = true
 opt.showmode = false
 opt.scrolloff = 5
 opt.spelllang = "es"
 opt.guicursor = ""
--- opt.cursorline = true
+opt.cursorline = true
 opt.termguicolors = true
 
 --tab & indentation
@@ -38,4 +39,7 @@ opt.backspace = "indent,eol,start"
 opt.splitright = true
 opt.splitbelow = true
 
--- opt.colorcolumn = "80"
+opt.colorcolumn = "88"
+
+vim.g.instant_username = "ANTONIO"
+

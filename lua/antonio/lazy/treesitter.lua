@@ -5,7 +5,7 @@ return {
     require("nvim-treesitter.configs").setup({
       ensure_installed = {
         "gitignore", "go", "vue", "vimdoc", "json",
-        "javascript", "make",  "typescript", "python", "bash","c", "cpp","lua", "rust", "css", "html"},
+        "javascript",  "typescript", "python", "bash","c", "cpp","lua", "css", "html"},
         indent = {enable = false},
         autotag = {
           enable = true,
@@ -14,7 +14,6 @@ return {
         auto_install = true,
         highlight = {
           enable = true,
-          additional_vim_regex_highlighting = false,
         },
         incremental_selection = {
             enable = true,

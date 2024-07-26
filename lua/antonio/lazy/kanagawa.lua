@@ -12,32 +12,32 @@ return {
       typeStyle = { bold = false},
       transparent = false,
       dimInactive = false,
-      terminalColors = true,
+      terminalColors = false,
       colors = {
         palette = {
-          fujiwhite = "#C1C5C1", --[[ Main foreground ]]
-          oldWhite = "#C1C5C1",
-          sumiInk0 = "#131313",
-          sumiInk1 = "#131313",
-          sumiInk2 = "#131313",
+          fujiwhite = "#ffffff", --[[ Main foreground ]]
+          oldWhite = "#c1c5c1",
+          sumiInk0 = "#c1c5c1",
+          sumiInk1 = "#c1c5c1",
+          sumiInk2 = "#c1c5c1",
           sumiInk3 = "#131313", --[[ Main background ]]
-          -- sumiInk4 = "#131313",
-          fujiGray = "#C18236", --[[ Comments ]]
-          oniViolet = "#FDDD4F", --[[ Statements and keywords ]]
-          crystalBlue = "#90A8A4", --[[ Functions and titles ]]
-          springViolet2 = "#C1C5C1", --[[ Brackets and punctuation ]]
-          springBlue = "#FDDD4F", --[[ Specials and builtin functions ]]
-          waveAqua2 = "#90a8a4", --[[ Types ]]
-          springGreen = "#82BF60", --[[ Strings ]]
-          boatYellow2 = "#C1C5C1", --[[ Operators, RegEx]]
-          carpYellow = "#C1C5C1", --[[ Identifiers ]]
-          sakuraPink = "#C1C5C1", --[[ Numbers ]]
-          waveRed = "#C1C5C1", --[[ Standout specials (builtin variables) ]]
-          peachRed = "#C1C5C1", --[[ Standout specials 2 (exception handling, return)]]
-          surimiOrange = "#90A8A4", --[[ Constants, imports, booleans ]]
-          katanaGray = "#90a8a4", --[[ Deprecated ]]
-          -- boatYellow1 = "#C1C5C1", --[[ Not used ]]
-          -- lightBlue = "#C1C5C1", --[[ Not used ]]
+          sumiInk4 = "#c1c5c1",
+          fujiGray = "#c18236", --[[ Comments ]]
+          oniViolet = "#c1c5c1", --[[ Statements and keywords ]]
+          crystalBlue = "#c1c5c1", --[[ Functions and titles ]]
+          springViolet2 = "#c1c5c1", --[[ Brackets and punctuation ]]
+          springBlue = "#c1c5c1", --[[ Specials and builtin functions ]]
+          waveAqua2 = "#c1c5c1", --[[ Types ]]
+          springGreen = "#82bf60", --[[ Strings ]]
+          boatYellow2 = "#c1c5c1", --[[ Operators, RegEx]]
+          carpYellow = "#c1c5c1", --[[ Identifiers ]]
+          sakuraPink = "#c1c5c1", --[[ Numbers ]]
+          waveRed = "#c1c5c1", --[[ Standout specials (builtin variables) ]]
+          peachRed = "#c1c5c1", --[[ Standout specials 2 (exception handling, return)]]
+          surimiOrange = "#c1c5c1", --[[ Constants, imports, booleans ]]
+          katanaGray = "#c1c5c1", --[[ Deprecated ]]
+          boatYellow1 = "#c1c5c1", --[[ Not used ]]
+          lightBlue = "#c1c5c1", --[[ Not used ]]
         },
         theme = {
           all = {
@@ -47,19 +47,6 @@ return {
           }
         }
       },
-      overrides = function (colors)
-        return {
-          CursorLine = {bg = "NONE"},
-          CursorLineNr = {fg = "#FDDD4F", bold = false},
-          TelescopeSelection  = {bg = "#363646"},
-          Boolean = {bold = false},
-          htmlTag = {fg = "#90a8a4"},
-          htmlTagName = {fg = "#90a8a4"},
-          htmlEndTag = {fg = "#90a8a4"},
-          htmlBold = {bold = false},
-          htmlH1 = {fg = "#C1C5C1",bold = false},
-        }
-      end,
       background = {
         dark = "dragon",
       }

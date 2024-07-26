@@ -24,7 +24,7 @@ return {
     require("mason").setup()
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "cssls", "gopls", "htmx", "tsserver", "html"
+        "cssls", "gopls", "htmx", "tsserver", "html", "lua_ls", "volar"
       },
       handlers = {
         function(server_name)
@@ -46,6 +46,19 @@ return {
             }
           }
         end,
+
+        ["volar"] = function ()
+          local lspconfig = require("lspconfig")
+          lspconfig.volar.setup {
+            filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+            init_options = {
+              vue = {
+                hybridMode = false
+              }
+            }
+          }
+
+        end
       }
     })
 
